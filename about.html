@@ -1,13 +1,15 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
     <title>About Me - Adingwu Chijioke Kingsley</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- Ensures proper mobile scaling -->
     <link rel="stylesheet" href="assets/css/main.css" />
     <style>
         /* Center content while keeping text justified */
         #about {
             max-width: 800px;  /* Maintain readability */
             margin: 0 auto;  /* Center the section */
+            padding: 20px;  /* Add padding for mobile */
             text-align: center; /* Center the image */
         }
 
@@ -20,6 +22,8 @@
         /* Justify paragraphs */
         #about p {
             text-align: justify;
+            font-size: 1.1rem; /* Increase font size for readability */
+            line-height: 1.6;  /* Improve spacing */
         }
 
         /* Style unordered lists */
@@ -30,6 +34,7 @@
         #about ul li {
             text-align: justify;
             margin-bottom: 10px; /* Add spacing between bullet points */
+            font-size: 1.1rem; /* Increase readability */
         }
 
         /* Ensure text inside list items is not italic */
@@ -42,11 +47,35 @@
         .profile-image {
             display: block; 
             margin: 0 auto 20px; /* Center image and add bottom margin */
-            width: 200px; /* Adjust width as needed */
-            height: 200px; /* Ensure image remains square */
+            width: 200px; /* Default width */
+            height: 200px; /* Keep image square */
             border-radius: 50%; /* Make it circular */
             object-fit: cover; /* Ensure proper cropping */
             border: 3px solid #333; /* Optional: Add a border */
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            body {
+                font-size: 18px; /* Increase base font size */
+            }
+
+            #about {
+                padding: 15px; /* Add spacing on small screens */
+            }
+
+            h2, h3 {
+                font-size: 1.5rem; /* Adjust heading sizes */
+            }
+
+            p, ul {
+                font-size: 1.2rem; /* Make body text bigger */
+            }
+
+            .profile-image {
+                width: 150px; /* Reduce image size for small screens */
+                height: 150px;
+            }
         }
     </style>
 </head>
