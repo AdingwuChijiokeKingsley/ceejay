@@ -1,13 +1,15 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
     <title>Experience - Adingwu Chijioke Kingsley</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- Ensures proper mobile scaling -->
     <link rel="stylesheet" href="assets/css/main.css" />
     <style>
         /* Center content while keeping text justified */
         #experience {
             max-width: 800px;  /* Maintain readability */
             margin: 0 auto;  /* Center the section */
+            padding: 20px;  /* Add padding for mobile */
         }
 
         /* Align headers to the left */
@@ -19,6 +21,8 @@
         /* Justify paragraphs */
         #experience p {
             text-align: justify;
+            font-size: 1.1rem; /* Increase font size for readability */
+            line-height: 1.6;  /* Improve spacing */
         }
 
         /* Style unordered lists */
@@ -29,6 +33,27 @@
         #experience ul li {
             text-align: justify;
             margin-bottom: 10px; /* Add spacing between bullet points */
+            font-size: 1.1rem; /* Increase readability */
+            line-height: 1.5; /* Improve spacing */
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            body {
+                font-size: 18px; /* Increase base font size */
+            }
+
+            #experience {
+                padding: 15px; /* Add spacing on small screens */
+            }
+
+            h2, h3 {
+                font-size: 1.5rem; /* Adjust heading sizes */
+            }
+
+            p, ul {
+                font-size: 1.2rem; /* Make body text bigger */
+            }
         }
     </style>
 </head>
@@ -44,13 +69,13 @@
             <h3>Career Break – Self-Development & Data Analytics Training</h3>
             <p><b>Present</b></p>
             <ul>
-                <li>Focused on self-development in <b>Data Analytics</b>, gaining hands-on experience in <b>SQL, Excel, Tableau, and Power BI </b>.</li>
+                <li>Focused on self-development in <b>Data Analytics</b>, gaining hands-on experience in <b>SQL, Excel, Tableau, and Power BI</b>.</li>
                 <li>Applied <b>Python for Web Scraping</b> to extract and analyze real-world data.</li>
                 <li>Completed multiple online courses and practical projects to enhance <b>data visualization and analytical skills</b>.</li>
                 <li>Developed expertise in handling <b>structured and unstructured datasets</b>, improving data-driven decision-making.</li>
             </ul>
 
-            <h3> Project & Service Division</h3>
+            <h3>Project & Service Division</h3>
             <p><b>Gil Automation, Port Harcourt, Rivers | February 2020 - February 2024</b></p>
             <ul>
                 <li>Developed and managed <b>Bills of Materials (BOM)</b> for clients such as <b>NLNG, SAIPEM, and SPDC</b>.</li>
