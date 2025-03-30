@@ -3,17 +3,103 @@
 <head>
     <title>About Me - Adingwu Chijioke Kingsley</title>
     <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        /* Center content while keeping text justified */
+        #about {
+            max-width: 800px;  /* Maintain readability */
+            margin: 0 auto;  /* Center the section */
+            text-align: center; /* Center the image */
+        }
 
+        /* Align headers to the left */
+        #about h2, 
+        #about h3 {
+            text-align: left;
+        }
+
+        /* Justify paragraphs */
+        #about p {
+            text-align: justify;
+        }
+
+        /* Style unordered lists */
+        #about ul {
+            padding-left: 20px; /* Standard indentation */
+        }
+
+        #about ul li {
+            text-align: justify;
+            margin-bottom: 10px; /* Add spacing between bullet points */
+        }
+
+        /* Ensure text inside list items is not italic */
+        #about ul li b {
+            font-weight: bold; /* Force bold instead of italic */
+            font-style: normal; /* Ensure it's not italic */
+        }
+
+        /* Profile image styling */
+        .profile-image {
+            display: block; 
+            margin: 0 auto 20px; /* Center image and add bottom margin */
+            width: 200px; /* Adjust width as needed */
+            height: 200px; /* Ensure image remains square */
+            border-radius: 50%; /* Make it circular */
+            object-fit: cover; /* Ensure proper cropping */
+            border: 3px solid #333; /* Optional: Add a border */
+        }
+    </style>
 </head>
 <body>
     <header>
         <a href="index.html" class="logo">Home</a>
     </header>
+
     <section id="about">
-        <h2>About Me</h2>
-        <p>Hi, I'm Adingwu Chijioke Kingsley, a data analyst skilled in SQL, Tableau, Power BI, Python, and Excel.</p>
-        <p>My background in electrical/electronic engineering has given me a solid foundation in problem-solving and analytical thinking.</p>
+        <div id="intro">
+            <!-- Profile Image -->
+            <img src="assets/images/profile.jpg" alt="Adingwu Chijioke Kingsley" class="profile-image">
+
+            <h2>About Me</h2>
+            <p>
+                Hi, I'm <strong>Adingwu Chijioke Kingsley</strong>, a results-driven <strong>Data Analyst</strong> with a background in <strong>Electrical and Electronic Engineering</strong>.
+                Passionate about transforming raw data into meaningful insights, I leverage my analytical skills to drive data-driven decision-making.
+                My transition into data analytics is fueled by my curiosity to understand data trends, build insightful dashboards, and create predictive models that support business intelligence.
+            </p>
+
+            <h3>Skills & Tools</h3>
+            <ul>
+                <li><strong>SQL:</strong> Data querying and manipulation</li>
+                <li><strong>Excel:</strong> Data cleaning and visualization</li>
+                <li><strong>Tableau & Power BI:</strong> Interactive dashboard development</li>
+                <li><strong>Python:</strong> Web scraping and data processing</li>
+                <li><strong>Strong analytical and problem-solving skills</strong></li>
+            </ul>
+
+            <h3>Background</h3>
+            <p>
+                I hold a <strong>Bachelor’s Degree in Electrical/Electronic Engineering</strong> from the University of Benin.
+                My experience in engineering includes working on <strong>power distribution networks, industrial automation, and instrumentation</strong>.
+                Through these projects, I developed a strong analytical mindset, which I now apply to data analytics.
+            </p>
+
+            <h3>My Data Analytics Journey</h3>
+            <p>
+                I have been actively developing my skills through self-learning and practical projects. Some of my key projects include:
+            </p>
+            <ul>
+                <li><strong>SQL Data Analysis:</strong> Querying and analyzing structured datasets to uncover business insights.</li>
+                <li><strong>Tableau & Power BI Dashboards:</strong> Creating dynamic dashboards for performance tracking and data storytelling.</li>
+                <li><strong>Python Web Scraping:</strong> Extracting real-world data for analysis and reporting.</li>
+            </ul>
+
+            <h3>Career Goal</h3>
+            <p>
+                I aspire to work as a <strong>Data Analyst</strong>, where I can apply my expertise in <strong>data visualization, statistical analysis, and business intelligence</strong>
+                to solve complex problems and optimize decision-making.
+            </p>
+        </div>
     </section>
+
 </body>
 </html>
