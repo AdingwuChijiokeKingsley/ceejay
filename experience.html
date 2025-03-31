@@ -57,6 +57,7 @@
                 transition: max-height 0.3s ease-in-out;
                 overflow: hidden;
                 max-height: 0;
+                z-index: 1000; /* Ensure menu is on top */
             }
 
             .nav-links.active {
@@ -73,6 +74,11 @@
                 display: block;
                 width: 100%;
                 padding: 15px;
+            }
+
+            /* Adjust the content below the navbar */
+            #experience {
+                padding-top: 70px; /* Add space to prevent overlap */
             }
         }
 
