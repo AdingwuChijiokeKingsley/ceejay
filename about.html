@@ -33,6 +33,7 @@
             list-style: none;
             padding: 0;
             display: flex;
+            z-index: 1000;  /* Ensuring the dropdown stays on top */
         }
 
         .nav-links li {
@@ -54,6 +55,7 @@
                 top: 50px;
                 left: 0;
                 text-align: center;
+                padding-top: 10px;
             }
 
             .nav-links li {
@@ -112,6 +114,7 @@
 
             #about {
                 padding: 15px;
+                padding-top: 70px; /* Added padding for mobile view to avoid overlap */
             }
 
             h2, h3 {
