@@ -5,12 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- Ensures proper mobile scaling -->
     <link rel="stylesheet" href="assets/css/main.css" />
     <style>
+        /* Navigation Bar Styling */
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: inline-block;
+            font-size: 1.2rem;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
         /* Center content while keeping text justified */
         #about {
-            max-width: 800px;  /* Maintain readability */
-            margin: 0 auto;  /* Center the section */
-            padding: 20px;  /* Add padding for mobile */
-            text-align: center; /* Center the image */
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
         }
 
         /* Align headers to the left */
@@ -22,67 +41,72 @@
         /* Justify paragraphs */
         #about p {
             text-align: justify;
-            font-size: 1.1rem; /* Increase font size for readability */
-            line-height: 1.6;  /* Improve spacing */
+            font-size: 1.1rem;
+            line-height: 1.6;
         }
 
         /* Style unordered lists */
         #about ul {
-            padding-left: 20px; /* Standard indentation */
+            padding-left: 20px;
         }
 
         #about ul li {
             text-align: justify;
-            margin-bottom: 10px; /* Add spacing between bullet points */
-            font-size: 1.1rem; /* Increase readability */
+            margin-bottom: 10px;
+            font-size: 1.1rem;
         }
 
         /* Ensure text inside list items is not italic */
         #about ul li b {
-            font-weight: bold; /* Force bold instead of italic */
-            font-style: normal; /* Ensure it's not italic */
+            font-weight: bold;
+            font-style: normal;
         }
 
         /* Profile image styling */
         .profile-image {
             display: block; 
-            margin: 0 auto 20px; /* Center image and add bottom margin */
-            width: 200px; /* Default width */
-            height: 200px; /* Keep image square */
-            border-radius: 50%; /* Make it circular */
-            object-fit: cover; /* Ensure proper cropping */
-            border: 3px solid #333; /* Optional: Add a border */
+            margin: 0 auto 20px;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #333;
         }
 
         /* Mobile responsiveness */
         @media (max-width: 768px) {
             body {
-                font-size: 18px; /* Increase base font size */
+                font-size: 18px;
             }
 
             #about {
-                padding: 15px; /* Add spacing on small screens */
+                padding: 15px;
             }
 
             h2, h3 {
-                font-size: 1.5rem; /* Adjust heading sizes */
+                font-size: 1.5rem;
             }
 
             p, ul {
-                font-size: 1.2rem; /* Make body text bigger */
+                font-size: 1.2rem;
             }
 
             .profile-image {
-                width: 150px; /* Reduce image size for small screens */
+                width: 150px;
                 height: 150px;
             }
         }
     </style>
 </head>
 <body>
-    <header>
-        <a href="index.html" class="logo">Home</a>
-    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+    </nav>
 
     <section id="about">
         <div id="intro">

@@ -5,11 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- Ensures proper mobile scaling -->
     <link rel="stylesheet" href="assets/css/main.css" />
     <style>
+        /* Navigation Bar Styling */
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: inline-block;
+            font-size: 1.2rem;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
         /* Center content while keeping text justified */
         #experience {
-            max-width: 800px;  /* Maintain readability */
-            margin: 0 auto;  /* Center the section */
-            padding: 20px;  /* Add padding for mobile */
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
         }
 
         /* Align headers to the left */
@@ -21,46 +40,51 @@
         /* Justify paragraphs */
         #experience p {
             text-align: justify;
-            font-size: 1.1rem; /* Increase font size for readability */
-            line-height: 1.6;  /* Improve spacing */
+            font-size: 1.1rem;
+            line-height: 1.6;
         }
 
         /* Style unordered lists */
         #experience ul {
-            padding-left: 20px; /* Standard indentation */
+            padding-left: 20px;
         }
 
         #experience ul li {
             text-align: justify;
-            margin-bottom: 10px; /* Add spacing between bullet points */
-            font-size: 1.1rem; /* Increase readability */
-            line-height: 1.5; /* Improve spacing */
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+            line-height: 1.5;
         }
 
         /* Mobile responsiveness */
         @media (max-width: 768px) {
             body {
-                font-size: 18px; /* Increase base font size */
+                font-size: 18px;
             }
 
             #experience {
-                padding: 15px; /* Add spacing on small screens */
+                padding: 15px;
             }
 
             h2, h3 {
-                font-size: 1.5rem; /* Adjust heading sizes */
+                font-size: 1.5rem;
             }
 
             p, ul {
-                font-size: 1.2rem; /* Make body text bigger */
+                font-size: 1.2rem;
             }
         }
     </style>
 </head>
 <body>
-    <header>
-        <a href="index.html" class="logo">Home</a>
-    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+    </nav>
 
     <section id="experience">
         <div id="intro">
@@ -109,5 +133,6 @@
             </ul>
         </div>
     </section>
+
 </body>
 </html>
