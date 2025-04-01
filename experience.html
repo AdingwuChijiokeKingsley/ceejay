@@ -57,7 +57,7 @@
                 transition: max-height 0.3s ease-in-out;
                 overflow: hidden;
                 max-height: 0;
-                z-index: 1000; /* Ensure menu is on top */
+                z-index: 1000;
             }
 
             .nav-links.active {
@@ -69,17 +69,6 @@
                 padding: 15px 0;
                 border-bottom: 1px solid #555;
             }
-
-            .nav-links li a {
-                display: block;
-                width: 100%;
-                padding: 15px;
-            }
-
-            /* Adjust the content below the navbar */
-            #experience {
-                padding-top: 70px; /* Add space to prevent overlap */
-            }
         }
 
         /* Center content while keeping text justified */
@@ -89,20 +78,16 @@
             padding: 20px;
         }
 
-        /* Align headers to the left */
-        #experience h2, 
-        #experience h3 {
+        #experience h2, #experience h3 {
             text-align: left;
         }
 
-        /* Justify paragraphs */
         #experience p {
             text-align: justify;
             font-size: 1.1rem;
             line-height: 1.6;
         }
 
-        /* Style unordered lists */
         #experience ul {
             padding-left: 20px;
         }
@@ -111,32 +96,26 @@
             text-align: justify;
             margin-bottom: 10px;
             font-size: 1.1rem;
-            line-height: 1.5;
         }
 
-        /* Mobile responsiveness */
-        @media (max-width: 768px) {
-            body {
-                font-size: 18px;
-            }
+        /* CV Download Button */
+        .cv-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+        }
 
-            #experience {
-                padding: 15px;
-            }
-
-            h2, h3 {
-                font-size: 1.5rem;
-            }
-
-            p, ul {
-                font-size: 1.2rem;
-            }
+        .cv-button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-
-    <!-- Navigation Bar -->
     <nav class="navbar">
         <a href="index.html">Home</a>
         <span class="menu-icon" onclick="toggleMenu()">☰</span>
@@ -150,33 +129,25 @@
     <section id="experience">
         <div id="intro">
             <h2>Experience</h2>
-
             <h3>Career Break – Self-Development & Data Analytics Training</h3>
             <p><b>Present</b></p>
             <ul>
-                <li>Focused on self-development in <b>Data Analytics</b>, gaining hands-on experience in <b>SQL, Excel, Tableau, and Power BI</b>.</li>
-                <li>Applied <b>Python for Web Scraping</b> to extract and analyze real-world data.</li>
-                <li>Completed multiple online courses and practical projects to enhance <b>data visualization and analytical skills</b>.</li>
-                <li>Developed expertise in handling <b>structured and unstructured datasets</b>, improving data-driven decision-making.</li>
+                <li>Gained hands-on experience in SQL, Excel, Tableau, and Power BI.</li>
+                <li>Applied Python for Web Scraping to analyze real-world data.</li>
+                <li>Completed online courses and projects enhancing data visualization skills.</li>
             </ul>
-
             <h3>Project & Service Division</h3>
-            <p><b>Gil Automation, Port Harcourt, Rivers | February 2020 - February 2024</b></p>
+            <p><b>Gil Automation, Port Harcourt, Rivers | Feb 2020 - Feb 2024</b></p>
             <ul>
-                <li>Developed and managed <b>Bills of Materials (BOM)</b> for clients such as <b>NLNG, SAIPEM, and SPDC</b>.</li>
-                <li>Prepared and executed <b>project schedules and mobilization plans</b> for industrial automation projects.</li>
-                <li>Conducted <b>engineering documentation</b> and interpreted <b>P&IDs, PFDs, and SLDs</b> for various projects.</li>
-                <li>Executed the <b>Escravos Export Systems Project (EESP)</b> at Chevron’s Warri platform, overseeing <b>instrumentation and electrical works</b>.</li>
-                <li>Led <b>site visits and transformer repair projects</b> for PHED (Woji), NAOC (Ebocha & Obiafu), and ExxonMobil (QIT).</li>
-                <li>Selected and integrated <b>PLC hardware and signal modules</b> for automation projects at Seplat.</li>
+                <li>Developed and managed Bills of Materials (BOM) for clients.</li>
+                <li>Executed project schedules and mobilization plans.</li>
+                <li>Conducted engineering documentation for major projects.</li>
             </ul>
-
             <h3>Asset Metering Intern</h3>
-            <p><b>Shell Petroleum Development Company (SPDC), Port Harcourt, Rivers | September 2018 – December 2018</b></p>
+            <p><b>Shell Petroleum Development Company | Sep 2018 - Dec 2018</b></p>
             <ul>
-                <li>Conducted <b>pressure testing and integrity checks</b> on industrial valves and flow meters.</li>
-                <li>Operated and maintained <b>ultrasonic, turbine, and Coriolis meters</b> for precise measurement of liquid and gas flow.</li>
-                <li>Assisted in the <b>assembly of Permanent Magnet Alternators (PMG)</b> and execution of diagnostic tests.</li>
+                <li>Performed integrity checks on industrial flow meters.</li>
+                <li>Maintained and operated ultrasonic and Coriolis meters.</li>
             </ul>
 
             <h3>Southern Swamp Associated Gas Solution (SSAGS) Intern</h3>
